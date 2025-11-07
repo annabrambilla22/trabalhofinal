@@ -2,56 +2,89 @@
 <html lang="pt-BR">
 <head>
   <!-- 
-    index.html: Estrutura HTML5 principal do projeto "Do Zero ao Deploy".
-    Aqui ligamos o CSS (style.css) e o JavaScript (app.js).
+    README - PROJETO "DO ZERO AO DEPLOY"
+    
+    Como testar:
+    1. Abra este arquivo (index.html) no navegador
+    2. Use as credenciais de demo:
+       - Usuário: usuarioDemo
+       - Senha: senha123
+    3. Explore a playlist e teste a busca
+    
+    Para customizar:
+    - Músicas: Edite o array no início do app.js
+    - Imagens: Substitua as URLs no array por suas próprias imagens
+    - Estilo: Ajuste as cores em :root no style.css
+    
+    IMPORTANTE: Este é um projeto demonstrativo.
+    NÃO USE este sistema de login em produção!
   -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Do Zero ao Deploy — Minha Playlist</title>
-
-  <!-- Link do CSS principal -->
+  <title>Lana Del Rey Collection</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!--
-    HEADER: contém logo/título e uma caixa de busca.
-    Comentários dentro do HTML explicam cada parte para estudo.
-  -->
-  <header class="site-header">
-    <div class="logo">
-      <!-- Logo simples: pode ser texto ou imagem -->
-      <h1>Minha Playlist</h1>
-      <p class="subtitle">Do Zero ao Deploy</p>
-    </div>
+  <!-- Tela de Login -->
+  <div id="loginScreen" class="login-container">
+    <div class="login-box">
+      <h1>Lana Del Rey Collection</h1>
+      <p class="subtitle">Entre para acessar a playlist</p>
+      
+      <form id="loginForm" class="login-form">
+        <div class="form-group">
+          <label for="username">Usuário</label>
+          <input type="text" id="username" required placeholder="Digite seu usuário">
+        </div>
+        
+        <div class="form-group">
+          <label for="password">Senha</label>
+          <input type="password" id="password" required placeholder="Digite sua senha">
+        </div>
 
-    <!-- Caixa de busca (ainda não funcional, serve para estilizar) -->
-    <div class="search">
-      <input id="searchInput" type="search" placeholder="Buscar música ou artista..." />
-    </div>
-  </header>
+        <p id="loginError" class="error-message"></p>
+        
+        <button type="submit">Entrar</button>
+      </form>
 
-  <!--
-    MAIN: área principal que mostrará as músicas.
-    A lista de músicas será criada dinamicamente pelo app.js dentro do elemento #songs.
-  -->
-  <main class="main-content">
-    <section class="playlist">
-      <h2>Playlist</h2>
-      <!-- Aqui o JavaScript vai injetar os cards de música -->
-      <div id="songs" class="songs-grid">
-        <!-- Conteúdo gerado pelo JS -->
+      <div class="demo-info">
+        <p>Demonstração: Use usuarioDemo / senha123</p>
+        <p class="security-notice">⚠️ ATENÇÃO: Este é apenas um demo educativo.
+          Em produção, NUNCA armazene senhas no frontend!</p>
       </div>
-    </section>
-  </main>
+    </div>
+  </div>
 
-  <!--
-    FOOTER simples com créditos.
-  -->
-  <footer class="site-footer">
-    <p>Feito para o trabalho "Do Zero ao Deploy" — HTML • CSS • JS</p>
-  </footer>
+  <!-- Tela Principal (inicialmente oculta) -->
+  <div id="mainScreen" class="main-screen hidden">
+    <header class="site-header">
+      <div class="header-content">
+        <div class="logo">
+          <h1>Lana Del Rey Collection</h1>
+          <p class="subtitle">Playlist Curada</p>
+        </div>
 
-  <!-- Script principal: use "defer" para carregar após o parsing do HTML -->
+        <div class="search">
+          <input id="searchInput" type="search" placeholder="Buscar música ou artista...">
+        </div>
+
+        <button id="logoutBtn" class="logout-btn">Sair</button>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="playlist">
+        <div id="songs" class="songs-grid">
+          <!-- Cards de música serão inseridos aqui via JavaScript -->
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Do Zero ao Deploy — Desenvolvido com HTML, CSS e JavaScript</p>
+    </footer>
+  </div>
+
   <script defer src="app.js"></script>
 </body>
 </html>
