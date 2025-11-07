@@ -2,34 +2,34 @@
 // Cada música tem título, artista, duração e uma URL de capa (podem ser substituídas por URLs reais)
 const playlist = [
     {
-        titulo: "Bohemian Rhapsody",
-        artista: "Queen",
-        duracao: "5:55",
-        capa: "https://picsum.photos/200/200"
-    },
-    {
-        titulo: "Imagine",
-        artista: "John Lennon",
-        duracao: "3:03",
-        capa: "https://picsum.photos/200/200"
-    },
-    {
-        titulo: "Garota de Ipanema",
-        artista: "Tom Jobim",
+        titulo: "Young and Beautiful",
+        artista: "Lana Del Rey",
         duracao: "3:56",
-        capa: "https://picsum.photos/200/200"
+        capa: "https://upload.wikimedia.org/wikipedia/en/8/8c/Young_and_Beautiful_cover.png"
     },
     {
-        titulo: "Sweet Child O' Mine",
-        artista: "Guns N' Roses",
-        duracao: "5:56",
-        capa: "https://picsum.photos/200/200"
+        titulo: "Summertime Sadness",
+        artista: "Lana Del Rey",
+        duracao: "4:25",
+        capa: "https://upload.wikimedia.org/wikipedia/en/2/29/BornToDieAlbumCover.png"
     },
     {
-        titulo: "Billie Jean",
-        artista: "Michael Jackson",
-        duracao: "4:54",
-        capa: "https://picsum.photos/200/200"
+        titulo: "Video Games",
+        artista: "Lana Del Rey",
+        duracao: "4:42",
+        capa: "https://upload.wikimedia.org/wikipedia/en/2/29/BornToDieAlbumCover.png"
+    },
+    {
+        titulo: "Born to Die",
+        artista: "Lana Del Rey",
+        duracao: "4:46",
+        capa: "https://upload.wikimedia.org/wikipedia/en/2/29/BornToDieAlbumCover.png"
+    },
+    {
+        titulo: "Say Yes to Heaven",
+        artista: "Lana Del Rey",
+        duracao: "3:56",
+        capa: "https://upload.wikimedia.org/wikipedia/en/a/a4/Say_Yes_to_Heaven_-_Lana_Del_Rey.png"
     }
 ];
 
