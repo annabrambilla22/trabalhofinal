@@ -5,31 +5,31 @@ const playlist = [
         titulo: "Young and Beautiful",
         artista: "Lana Del Rey",
         duracao: "3:56",
-        capa: "https://upload.wikimedia.org/wikipedia/en/8/8c/Young_and_Beautiful_cover.png"
+        capa: "https://i.scdn.co/image/ab67616d00001e02aa27db6acf7746348cd9436c"
     },
     {
         titulo: "Summertime Sadness",
         artista: "Lana Del Rey",
         duracao: "4:25",
-        capa: "https://upload.wikimedia.org/wikipedia/en/2/29/BornToDieAlbumCover.png"
+        capa: "https://i.scdn.co/image/ab67616d00001e02c5649add07ed3720be9d5526"
     },
     {
         titulo: "Video Games",
         artista: "Lana Del Rey",
         duracao: "4:42",
-        capa: "https://upload.wikimedia.org/wikipedia/en/2/29/BornToDieAlbumCover.png"
+        capa: "https://i.scdn.co/image/ab67616d00001e02c5649add07ed3720be9d5526"
     },
     {
         titulo: "Born to Die",
         artista: "Lana Del Rey",
         duracao: "4:46",
-        capa: "https://upload.wikimedia.org/wikipedia/en/2/29/BornToDieAlbumCover.png"
+        capa: "https://i.scdn.co/image/ab67616d00001e02c5649add07ed3720be9d5526"
     },
     {
         titulo: "Say Yes to Heaven",
         artista: "Lana Del Rey",
         duracao: "3:56",
-        capa: "https://upload.wikimedia.org/wikipedia/en/a/a4/Say_Yes_to_Heaven_-_Lana_Del_Rey.png"
+        capa: "https://i.scdn.co/image/ab67616d00001e0289a154d42dff1199f8e0c301"
     }
 ];
 
